@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/sudoku.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico">
+    <title>level</title>
+</head>
+<body>
+    <video autoplay muted loop id="myVideoLogin">
+        <source src="./IMG AND ANIMATIONS/Autumn Leaves.webm" type="video/webm">
+        
+    </video>
+<div class="container">
+    <div id="levelDiv">
+        <h1 id="levelh1">Welcome <br>abcd </h1>
+        <h3 class="levelh3">Level difficulty</h3>
+        <form method="get" action="./bord.html">
+            <button onclick="level(event)" class="learn-more" class="buttonLevel"  id="level_1" value="1">Baby</button>
+            <button  onclick="level(event)" class="learn-more" class="buttonLevel"  id= "level_2" type="submit" value="2">Not so hard</button>
+            <button onclick="level(event)" class="learn-more" class="buttonLevel"  id= "level_3" type="submit" value="3">Nightmare</button>
+        </form>
+    </div>
+</div>
+    <script src="./JS/sudoku.js"></script>
+</body>
+</html>

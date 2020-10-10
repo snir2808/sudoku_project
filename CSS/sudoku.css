@@ -1,0 +1,625 @@
+ /* Start of styling. */
+ /* Login HTML styling + Body of all HTMLS*/
+ body{
+   margin: auto;
+   text-align: center;
+   font-family: "Rubik", sans-serif;
+ }
+ 
+ #loginDiv{
+   margin-top: 50px;
+   margin-left: 250px;
+   margin-right: 250px;
+   /* border: 1.5px solid black; */
+   position: relative;
+  }
+  
+  #loginh1{
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 90px;
+    color: #FF3434;
+  }
+  #myVideoLogin{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+
+  #passwordLogin{
+  padding: 25px 20px 20px 25px;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    opacity: 25%;
+    border-radius: 25px;
+    color: rgb(22, 20, 20);
+  
+  }
+  #usernameLogin{
+  padding: 25px 20px 20px 25px;
+  font-size: 35px;
+    opacity: 25%;
+    border-radius: 25px;
+    color: black;
+  }
+
+  #loginButton {
+    background: #222;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 40px;
+    font-family: 'Sansita Swashed', cursive;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  #loginButton #circle {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 500ms;
+} 
+
+.noselect {
+-webkit-touch-callout: none;  
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}          
+
+#loginButton:hover {
+background: transparent;
+}
+
+#loginButton:hover #circle {
+height: 50px;
+width: 150px;
+left: 0;
+border-radius: 0;
+border-bottom: 2px solid #eee;
+}
+
+
+
+
+
+
+.h1{
+  font-family: 'Sansita Swashed', cursive;
+}
+
+.bg-modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contents {
+  height: 300px;
+  width: 500px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  border-radius: 4px;
+  animation: 0.6s ease 0s 1 normal none running animatezoom;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: animatezoom;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 42px;
+  color: #333;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.close:hover {
+  color: #666;
+}
+
+/* End of login HTML Styling */
+/* Start of level HTML Styling */
+
+#levelh1{
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 90px;
+  color: #FF3434;
+
+}
+#levelDiv{
+  background-color:rgba(255, 255, 255,0.8);
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 650px;
+  height: 450px;
+  border-radius: 25px;
+  
+}
+.buttonLevel{
+  display: inline-block;
+}
+.levelh3{
+  font-family: 'Sansita Swashed', cursive;
+  font-size: 45px;
+  margin-top: -65px;
+  margin-bottom: -10px;
+}
+#level_3{
+  margin-top: 1cm;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+#level_2{
+  margin-top: 1cm;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+#level_1{
+  margin-top: 1cm;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+
+  /* End of level HTML styling */
+  /* Start of bord HTML Styling */
+  
+  #bordTableGrid {
+    border: 2px solid #000000;
+    margin: auto;
+    border-collapse: collapse;
+  }
+  td {
+    border: 1px solid #000000;
+    text-align: center;
+    vertical-align: middle; 
+    border-collapse: collapse; 
+  }
+  .container{
+    position: relative;
+  }
+  
+                                  /* start of grid cells styling */
+  #cell-0,  #cell-1,  #cell-2  { 
+    border-top: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-2,  #cell-11, #cell-20 { 
+    border-right: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-18, #cell-19, #cell-20 { 
+    border-bottom: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-0,  #cell-9,  #cell-18 { 
+    border-left: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-3,  #cell-4,  #cell-5  {
+     border-top: 2px solid #000000;
+     width: 48px;
+     height: 48px; 
+  }
+#cell-5,  #cell-14, #cell-23 { 
+    border-right: 2px solid #000000;
+    width: 48px;
+    height: 48px;
+  }
+#cell-21, #cell-22, #cell-23 { 
+    border-bottom: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-3,  #cell-12, #cell-21 { 
+    border-left: 2px solid #000000; 
+    width: 48px;
+    height: 48px;
+  }
+#cell-6,  #cell-7,  #cell-8  { 
+    border-top: 2px solid #000000; 
+    width: 48px;
+    height: 48px;
+  }
+#cell-8,  #cell-17, #cell-26 { 
+    border-right: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-24, #cell-25, #cell-26 { 
+    border-bottom: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-6,  #cell-15, #cell-24 { 
+    border-left: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-27, #cell-28, #cell-29 { 
+    border-top: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-29, #cell-38, #cell-47 { 
+    border-right: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-45, #cell-46, #cell-47 { 
+    border-bottom: 2px solid #000000; 
+    width: 48px;
+    height: 48px;
+  }
+#cell-27, #cell-36, #cell-45 { 
+    border-left: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-30, #cell-31, #cell-32 { 
+    border-top: 2px solid #000000; 
+    width: 48px;
+    height: 48px;
+  }
+#cell-32, #cell-41, #cell-50 { 
+    border-right: 2px solid #000000; 
+    width: 48px;
+    height: 48px;
+  }
+#cell-48, #cell-49, #cell-50 { 
+    border-bottom: 2px solid #000000; 
+    width: 48px;
+    height: 48px;
+  }
+#cell-30, #cell-39, #cell-48 { 
+    border-left: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-33, #cell-34, #cell-35 { 
+    border-top: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-35, #cell-44, #cell-53 { 
+    border-right: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-51, #cell-52, #cell-53 { 
+    border-bottom: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-33, #cell-42, #cell-51 { 
+    border-left: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-54, #cell-55, #cell-56 { 
+    border-top: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-56, #cell-65, #cell-74 { 
+    border-right: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-72, #cell-73, #cell-74 { 
+    border-bottom: 2px solid #000000; 
+    width: 48px;
+    height: 48px;
+  }
+#cell-54, #cell-63, #cell-72 { 
+    border-left: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-57, #cell-58, #cell-59 { 
+    border-top: 2px solid #000000; 
+    width: 48px;
+    height: 48px;
+  }
+#cell-59, #cell-68, #cell-77 { 
+    border-right: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-75, #cell-76, #cell-77 { 
+    border-bottom: 2px solid #000000; 
+    width: 48px;
+    height: 48px;
+  }
+#cell-57, #cell-66, #cell-75 { 
+    border-left: 2px solid #000000; 
+    width: 48px;
+    height: 48px;
+  }
+#cell-60, #cell-61, #cell-62 { 
+    border-top: 2px solid #000000; 
+    width: 48px;
+    height: 48px;
+  }
+#cell-62, #cell-71, #cell-80 { 
+    border-right: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-78, #cell-79, #cell-80 { 
+    border-bottom: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+#cell-60, #cell-69, #cell-78 { 
+    border-left: 2px solid #000000;
+    width: 48px;
+    height: 48px; 
+  }
+
+                              /* End of grid cells styling */
+
+                
+#bordh1{
+    font-family: 'Sansita Swashed', cursive;  
+    font-size: 90px;
+    color: #FF3434;
+
+}                
+
+.inputCell {
+  color: #000000;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  font-size: 24px;
+  background-color: #FFFFFF;
+  outline: none;
+  width: 48px;
+  height: 48px;
+  transition: background-color 1000ms linear;
+}
+
+input:focus {
+    outline:none;
+}
+
+#myVideoBord{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  display: none;
+}
+
+                    /* Start of animated button code. */
+
+
+@import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
+  * {
+    box-sizing: border-box;
+  }
+  *::before, *::after {
+    box-sizing: border-box;
+    
+  }
+  #tryAgainBorad{
+    margin-top: 1cm;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    margin-left: 10px;
+  }
+  
+  #finishBordButtun {
+    margin-top: 1cm;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  button.learn-more {
+    font-weight: 600;
+    color: #FF3434;
+    text-transform: uppercase;
+    padding: 1.25em 2em;
+    background: #fff0f0;
+    border: 2px solid #FF3434;
+    border-radius: 0.75em;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+  }
+  button.learn-more::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f9c4d2;
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+  }
+  button.learn-more:hover {
+    background: #ffe9e9;
+    transform: translate(0, 0.25em);
+  }
+  button.learn-more:hover::before {
+    box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+    transform: translate3d(0, 0.5em, -1em);
+  }
+  button.learn-more:active {
+    background: #ffe9e9;
+    transform: translate(0em, 0.75em);
+  }
+  button.learn-more:active::before {
+    box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+    transform: translate3d(0, 0, -1em);
+  }
+
+                                /* End of animated button code */
+
+label{
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  #loginDiv{ 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #levelDiv{
+    width: 350px;
+    height: 500px;
+  }
+  #levelh1{
+    font-size: 35px;
+    font-size: 76px;
+    margin-bottom: 100px;
+  }
+  .levelh3{
+    font-size: 35px;
+  }
+  #usernameLogin{
+    width: 250px;
+  }
+  #passwordLogin{
+    width: 250px;
+  }
+  #bordh1{
+    font-size: 65px;
+    margin-left: 33.3333333%;
+    margin-right: 33.333333%;
+    margin-bottom: 11px;
+  }
+  .bg-modal{
+    display: flex;
+    flex: 1;
+  }
+  .modal-contents{
+    height:550px;
+    width: 300px;
+  }
+  #modalcontentsfinish{
+  height: 350px;
+  width: 300px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  border-radius: 4px;
+  animation: 0.6s ease 0s 1 normal none running animatezoom;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: animatezoom;
+  }
+}
+
+
+
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

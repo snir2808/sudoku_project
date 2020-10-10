@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/sudoku.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico">
+    <title>login</title>
+</head>
+<body>
+    <video autoplay muted loop id="myVideoLogin">
+        <source src="IMG AND ANIMATIONS/Autumn Leaves.webm" type="video/webm">
+        
+      </video>
+    <div  id="loginDiv">
+        <h1 id="loginh1">Sudoku</h1>
+        <input id="usernameLogin" type="text" placeholder="User Name"><br>
+        <input id="passwordLogin" type="password" placeholder="Password"><br>
+        <div  onclick='logIn()' id="loginButton">Enter<div id="circle"></div></div>
+    </div>
+
+
+    <div class="bg-modal">
+        <center>
+
+            <div  class="modal-contents">
+                
+                <div onclick="close1()" class="close">+</div>
+                <img src="./IMG AND ANIMATIONS/x-button.png" alt="">
+                
+                <h1 class="h1"> hey.. your user name and/or your password is incorrect</h1>
+                
+            </div>
+        </center>
+    </div>
+    
+    <script src="./JS/sudoku.js"></script>
+</body>
+</html>
+
+
+
