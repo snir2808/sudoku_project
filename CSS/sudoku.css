@@ -570,9 +570,6 @@ label{
     margin-right: 33.333333%;
     margin-bottom: 11px;
   }
-  .bg-modal{
-    flex: 1;
-  }
   .modal-contents{
     height:550px;
     width: 300px;
