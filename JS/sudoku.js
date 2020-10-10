@@ -233,11 +233,7 @@ function getBoundingBox(matrix, i, j) {
     var boxEndX = boxNumberX + boxLength - 1; 
     return [[boxStartX, boxStartY], [boxEndX, boxEndY]];
 }
-function refresh(e){
-    if(!event){
-       break 
-    }else{
+function refresh(){
     location.reload()
-    }
 }
     

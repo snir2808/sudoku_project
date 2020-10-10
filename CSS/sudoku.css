@@ -571,7 +571,6 @@ label{
     margin-bottom: 11px;
   }
   .bg-modal{
-    display: flex;
     flex: 1;
   }
   .modal-contents{
