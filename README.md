@@ -1,4 +1,4 @@
- # live currency exchange calculator
+ # Sudoku game
 
 Hi my name is Snir.
 I'm here to explain to you about the project you're about to see.
